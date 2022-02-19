@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">	
+<head>
+	<meta charset="utf-8"/>
+	<title>时间 · 空间 · 相间</title>	
+	<meta name="author" content="Yong Yong Cheng">
+	
+
+	<link rel="stylesheet" href="https://aarnchng.github.io/theme/css/main.css" type="text/css" />
+		
+
+
+    <link href="https://aarnchng.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="时间 · 空间 · 相间 Atom Feed" />
+    <link href="https://aarnchng.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="时间 · 空间 · 相间 RSS Feed" />
+</head>
+	
+<body>
+
+    <div class="container">
+	  
+	  <header>
+	    <div class="feeds">
+	      <a href="https://aarnchng.github.io/feeds/all.atom.xml" rel="alternate"><img src="https://aarnchng.github.io/theme/images/icons/feed-32px.png" alt="atom feed"/></a>
+	  <a href="https://aarnchng.github.io/feeds/all.rss.xml" rel="alternate"><img src="https://aarnchng.github.io/theme/images/icons/feed-32px.png" alt="rss feed"/></a>
+	    </div>
+		<a href="https://aarnchng.github.io" class="title">时间 · 空间 · 相间</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
+
+
+
+
+        <article>
+          <h1><a href="https://aarnchng.github.io/posts/2022/01/devops-serialization/">JSON/BSON Serialization in Golang</a></h1>
+          <p>I am building a messaging system. The code for this messaging system is located at a Bitbucket <a href="https://bitbucket.org/yyongche/devops/src/master/">repository</a>. The provided instructions allow this messaging system to be run standalone in a self-hosted Kubernetes cluster.</p>
+<p>The messaging system provides a REST API in JSON and saves/loads messages in MongoDB using BSON. Struct Tags in the Go programming language make the JSON/BSON serialization a much clearer and concise implementation.</p>
+<div class="highlight"><pre><span></span><code>type MessageHeader struct {
+    ID        primitive.ObjectID `json:&quot;-&quot; bson:&quot;_id&quot;`
+    CreatedAt time.Time          `json:&quot;created_at&quot; bson:&quot;created_at&quot;`
+    User      string             `json:&quot;user&quot; bson:&quot;user&quot;`
+    Url       string             `json:&quot;url&quot; bson:&quot;-&quot;`
+}
+
+type Message struct {
+    ID        primitive.ObjectID `json:&quot;-&quot; bson:&quot;_id&quot;`
+    CreatedAt time.Time          `json:&quot;created_at&quot; bson:&quot;created_at&quot;`
+    User      string             `json:&quot;user&quot; bson:&quot;user&quot;`
+    Content   string             `json:&quot;content&quot; bson:&quot;content&quot;`
+}
+</code></pre></div>
+
+<p>The <code>json:"-"</code> and <code>bson:"-"</code> tags are used to ignore a field during the JSON/BSON serialization.</p>
+        </article>
+
+        <hr />
+
+          <div>
+            <h3>Last posts</h3>
+            <ol class="archive">
+
+
+
+        <li>
+<a href="https://aarnchng.github.io/posts/2021/09/matlab-port-2021/" rel="bookmark" title="Permalink to References on Converting MATLAB Codebase to Python">References on Converting MATLAB Codebase to Python</a>
+  <time datetime="2021-09-26T00:00:00+08:00">Sun 26 September 2021</time>
+<p class="tags">tags: <a href="https://aarnchng.github.io/tag/conversion.html">conversion</a><a href="https://aarnchng.github.io/tag/matlab.html">matlab</a><a href="https://aarnchng.github.io/tag/python.html">python</a></p>        </li>
+
+
+        <li>
+<a href="https://aarnchng.github.io/posts/2020/09/matlab-port/" rel="bookmark" title="Permalink to References on Converting MATLAB Codebase to Python">References on Converting MATLAB Codebase to Python</a>
+  <time datetime="2020-09-26T00:00:00+08:00">Sat 26 September 2020</time>
+<p class="tags">tags: <a href="https://aarnchng.github.io/tag/conversion.html">conversion</a><a href="https://aarnchng.github.io/tag/matlab.html">matlab</a><a href="https://aarnchng.github.io/tag/python.html">python</a></p>        </li>
+
+
+            </ol>
+          </div>
+
+
+		  </div>	
+		  
+		  <div class="sidebar">
+		    <div class="sidebar-container" >
+
+
+  	          <nav>
+	            <h2>Categories</h2>
+	            <ul>
+	                <li ><a href="https://aarnchng.github.io/category/porting.html">Porting</a></li>
+	                <li ><a href="https://aarnchng.github.io/category/coding.html">Coding</a></li>
+	            </ul>
+	          </nav>
+
+
+	            <aside>
+	              <h2>Blogroll</h2>
+	              <ul>
+	                  <li><a href="https://aarnchng.blogspot.com/">时间 · 空间</a></li>
+	              </ul>
+	            </aside>
+	        </div>
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  Yong Yong Cheng - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+</body>
+</html>

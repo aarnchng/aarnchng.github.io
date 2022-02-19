@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>时间 · 空间 · 相间 - Coding</title><link href="https://aarnchng.github.io/" rel="alternate"></link><link href="https://aarnchng.github.io/feeds/coding.atom.xml" rel="self"></link><id>https://aarnchng.github.io/</id><updated>2022-01-16T00:00:00+08:00</updated><subtitle>Time · Space · Phase</subtitle><entry><title>JSON/BSON Serialization in Golang</title><link href="https://aarnchng.github.io/posts/2022/01/devops-serialization/" rel="alternate"></link><published>2022-01-16T00:00:00+08:00</published><updated>2022-01-16T00:00:00+08:00</updated><author><name>Yong Yong Cheng</name></author><id>tag:aarnchng.github.io,2022-01-16:/posts/2022/01/devops-serialization/</id><summary type="html">&lt;p&gt;I am building a messaging system. The code for this messaging system is located at a Bitbucket &lt;a href="https://bitbucket.org/yyongche/devops/src/master/"&gt;repository&lt;/a&gt;. The provided instructions allow this messaging system to be run standalone in a self-hosted Kubernetes cluster.&lt;/p&gt;
+&lt;p&gt;The messaging system provides a REST API in JSON and saves/loads messages in MongoDB using …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I am building a messaging system. The code for this messaging system is located at a Bitbucket &lt;a href="https://bitbucket.org/yyongche/devops/src/master/"&gt;repository&lt;/a&gt;. The provided instructions allow this messaging system to be run standalone in a self-hosted Kubernetes cluster.&lt;/p&gt;
+&lt;p&gt;The messaging system provides a REST API in JSON and saves/loads messages in MongoDB using BSON. Struct Tags in the Go programming language make the JSON/BSON serialization a much clearer and concise implementation.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;type MessageHeader struct {
+    ID        primitive.ObjectID `json:&amp;quot;-&amp;quot; bson:&amp;quot;_id&amp;quot;`
+    CreatedAt time.Time          `json:&amp;quot;created_at&amp;quot; bson:&amp;quot;created_at&amp;quot;`
+    User      string             `json:&amp;quot;user&amp;quot; bson:&amp;quot;user&amp;quot;`
+    Url       string             `json:&amp;quot;url&amp;quot; bson:&amp;quot;-&amp;quot;`
+}
+
+type Message struct {
+    ID        primitive.ObjectID `json:&amp;quot;-&amp;quot; bson:&amp;quot;_id&amp;quot;`
+    CreatedAt time.Time          `json:&amp;quot;created_at&amp;quot; bson:&amp;quot;created_at&amp;quot;`
+    User      string             `json:&amp;quot;user&amp;quot; bson:&amp;quot;user&amp;quot;`
+    Content   string             `json:&amp;quot;content&amp;quot; bson:&amp;quot;content&amp;quot;`
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code&gt;json:"-"&lt;/code&gt; and &lt;code&gt;bson:"-"&lt;/code&gt; tags are used to ignore a field during the JSON/BSON serialization.&lt;/p&gt;</content><category term="Coding"></category><category term="programming"></category><category term="golang"></category><category term="serialization"></category></entry></feed>

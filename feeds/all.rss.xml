@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>时间 · 空间 · 相间</title><link>https://aarnchng.github.io/</link><description>Time · Space · Phase</description><lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0800</lastBuildDate><item><title>JSON/BSON Serialization in Golang</title><link>https://aarnchng.github.io/posts/2022/01/devops-serialization/</link><description>&lt;p&gt;I am building a messaging system. The code for this messaging system is located at a Bitbucket &lt;a href="https://bitbucket.org/yyongche/devops/src/master/"&gt;repository&lt;/a&gt;. The provided instructions allow this messaging system to be run standalone in a self-hosted Kubernetes cluster.&lt;/p&gt;
+&lt;p&gt;The messaging system provides a REST API in JSON and saves/loads messages in MongoDB using …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yong Yong Cheng</dc:creator><pubDate>Sun, 16 Jan 2022 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:aarnchng.github.io,2022-01-16:/posts/2022/01/devops-serialization/</guid><category>Coding</category><category>programming</category><category>golang</category><category>serialization</category></item><item><title>References on Converting MATLAB Codebase to Python</title><link>https://aarnchng.github.io/posts/2021/09/matlab-port-2021/</link><description>&lt;ul&gt;
+&lt;li&gt;MATLAB vs Python: Why and How to Make the Switch&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://realpython.com/matlab-vs-python/#syntax-differences-between-matlab-and-python"&gt;Syntax Differences Between MATLAB and Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://realpython.com/matlab-vs-python/#an-overview-of-basic-array-operations"&gt;An Overview of Basic Array Operations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NumPy for MATLAB Users&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://numpy.org/doc/stable/user/numpy-for-matlab-users.html#general-purpose-equivalents"&gt;General Purpose Equivalents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://numpy.org/doc/stable/user/numpy-for-matlab-users.html#linear-algebra-equivalents"&gt;Linear Algebra Equivalents&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Migrating MATLAB to Python: Strategies, Comparisons and a Guide to Converting for Experts&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.enthought.com/wp-content/uploads/Enthought-MATLAB-to-Python-White-Paper.pdf#section*.11"&gt;Indexing and Slicing: Why Zero-Based …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yong Yong Cheng</dc:creator><pubDate>Sun, 26 Sep 2021 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:aarnchng.github.io,2021-09-26:/posts/2021/09/matlab-port-2021/</guid><category>Porting</category><category>conversion</category><category>matlab</category><category>python</category></item><item><title>References on Converting MATLAB Codebase to Python</title><link>https://aarnchng.github.io/posts/2020/09/matlab-port/</link><description>&lt;ul&gt;
+&lt;li&gt;MATLAB vs Python: Why and How to Make the Switch&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://realpython.com/matlab-vs-python/#syntax-differences-between-matlab-and-python"&gt;Syntax Differences Between MATLAB and Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://realpython.com/matlab-vs-python/#an-overview-of-basic-array-operations"&gt;An Overview of Basic Array Operations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NumPy for MATLAB Users&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://numpy.org/doc/stable/user/numpy-for-matlab-users.html#general-purpose-equivalents"&gt;General Purpose Equivalents&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://numpy.org/doc/stable/user/numpy-for-matlab-users.html#linear-algebra-equivalents"&gt;Linear Algebra Equivalents&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.enthought.com/wp-content/uploads/2019/08/Enthought-MATLAB-to-Python-White-Paper_.pdf"&gt;Migrating MATLAB to Python: Strategies, Comparisons and a Guide to Converting for Experts&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;Indexing and Slicing: Why Zero-Based …&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Yong Yong Cheng</dc:creator><pubDate>Sat, 26 Sep 2020 00:00:00 +0800</pubDate><guid isPermaLink="false">tag:aarnchng.github.io,2020-09-26:/posts/2020/09/matlab-port/</guid><category>Porting</category><category>conversion</category><category>matlab</category><category>python</category></item></channel></rss>
