@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
+# pylama:skip=1
 
 AUTHOR = "Yong Yong Cheng"
 SITENAME = "时间 · 空间 · 相间"
@@ -31,7 +32,11 @@ ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%m}/{slug}/index.html"
 ARTICLE_URL = "posts/{date:%Y}/{date:%m}/{slug}/"
 
 SOCIAL = None
-LINKS = (("时间 · 空间", "https://aarnchng.blogspot.com/"),)
+LINKS = (
+    ("时间 · 空间", "https://aarnchng.blogspot.com/"),
+    ("ScratchPad", "data:text/html, <body contenteditable style='font: 2rem/1.5 monospace;max-width:60rem;margin:0 auto;padding:4rem;'>"),
+    ("RedHat Portfolio Architecture Examples", "https://gitlab.com/redhatdemocentral/portfolio-architecture-examples"),
+)
 
 READERS = {"html": None}
 PYGMENTS_RST_OPTIONS = {"linenos": "table"}
